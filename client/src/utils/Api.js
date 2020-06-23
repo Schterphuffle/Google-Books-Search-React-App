@@ -1,6 +1,6 @@
 import axios from "axios";
 
-// Export an object containing methods we'll use for accessing the Dog.Ceo API
+// Export an object containing methods we'll use for accessing Google Books
 
 export default {
   getRandomBook: function() {
@@ -10,6 +10,6 @@ export default {
     return axios.get("https://books.google.com/" + title + "/images");
   },
   getSavedBooks: function() {
-    return axios.get("https://dog.ceo/api/breeds/list");
+    return axios.get("https://books.google.com/Saved");
   }
 };

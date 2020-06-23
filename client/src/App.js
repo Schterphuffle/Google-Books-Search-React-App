@@ -1,15 +1,15 @@
 import React, { Component } from "react";
-import Jumbotron from "./components/Jumbotron";
-import DeleteBtn from "./components/DeleteBtn";
-import SaveBtn from "./components/SaveBtn";
-import ViewBtn from "./components/ViewBtn";
-import Form from "./components/Form";
-import {Container, Row, Col } from "./components/Grid";
-import Navbar from "./components/Navbar";
-import API from "./utils/API";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import API from "./utils/API";
+import DeleteBtn from "./components/DeleteBtn";
+import Results from "./components/Results";
+import Input from "./components/Input";
+import Jumbotron from "./components/Jumbotron";
+import Navbar from "./components/Navbar";
+import SaveBtn from "./components/Results/SaveBtn";
+import ViewBtn from "./components/Results/ViewBtn";
+import {Container, Row, Col } from "./components/Grid";
 import "./App.css";
-import Button from "../../../../08-Stu_Recipes/review-me/client/src/components/Button";
 
 class App extends Component {
 

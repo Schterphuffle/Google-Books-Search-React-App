@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import API from "./utils/API";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
+import Button from "../../../../08-Stu_Recipes/review-me/client/src/components/Button";
 
 class App extends Component {
 
@@ -87,6 +88,7 @@ class App extends Component {
             </Col>
           </Row>
         </Container>
+        </div>
     );
   }
 }

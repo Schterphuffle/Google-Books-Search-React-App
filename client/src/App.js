@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Alert from "./components"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 

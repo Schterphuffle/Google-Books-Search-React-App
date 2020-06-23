@@ -6,8 +6,8 @@
 * Express
 * Axios
 * Mongoose
-* env
 * react-router-dom
 * JavaScipt
 * HTML5
 * CSS
+* Bootstrap

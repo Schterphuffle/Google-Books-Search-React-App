@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link, Redirect } from "react-router-dom";
 import { Container } from "../components/Grid";
-import { Form, TextArea, FormBtn } from "../components/Form";
+import { Form, TextArea, FormBtn } from "../components/Form/Form";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 

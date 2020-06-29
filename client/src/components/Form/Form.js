@@ -1,4 +1,5 @@
 import React from "react";
+import "./Form.css";
 
 // This component lets us use a bootstrap input element without worrying about class names
 // or manually wrapping the input with a form-group div
@@ -19,10 +20,10 @@ export function TextArea(props) {
   );
 }
 
-export function FormBtn(props) {
+export function FormBtn({type="default", className, children, onClick}) {
   return (
-    <button {...props} style={{ float: "right", marginBottom: 10 }} className="btn btn-success">
-      {props.children}
+    <button onClick={onClick} className="btn btn-success">
+      {children}
     </button>
   );
 }

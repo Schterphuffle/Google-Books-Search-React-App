@@ -8,9 +8,9 @@ mongoose.connect(
 
 const bookSeed = [""];
 
-db.googlebooks
+db.googleBooks
     .remove({})
-    .then(() => db.googlebooks.collection.insertMany(bookSeed))
+    .then(() => db.googleBooks.collection.insertMany(bookSeed))
     .then(data => {
         console.log(data.result.n + " records inserted!");
         process.exit(0);

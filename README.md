@@ -2,9 +2,9 @@
 ### Anne Jordan, Amanda Amos, Joewan Eiland, and Steffi Wellington
 
 ## How to Use
-Click the image to go check out this Google Books App
+#### Click the image to go check out this Google Books App
 <a href="" target="_blank">
-<img src= "public/images/GoogleBooks.png">
+<img src= "client/public/images/GoogleBooks.png">
 </a>
 
  ## Technologies

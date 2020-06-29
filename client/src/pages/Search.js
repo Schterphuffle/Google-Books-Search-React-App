@@ -1,16 +1,18 @@
 import React, { Component } from "react";
 import { Link, Redirect } from "react-router-dom";
-import Jumbotron from "../../components/Jumbotron";
-import { Container } from "../../components/Grid";
-import API from "../../utils/";
-import { Container } from "../../components/Grid";
-import { Form } from "../../components/Form";
+import { Container } from "../components/Grid";
+import { Form, TextArea, FormBtn } from "../components/Form";
+import Jumbotron from "../components/Jumbotron";
+import API from "../utils/API";
 
 class Search extends Component {
   state = {
+    books: [],
     title: "",
-    toResults: false,
-    results: []
+    authors: "",
+    description: "",
+    image: "",
+    link: ""
   };
 
   handleInputChange = event => {
@@ -47,16 +49,13 @@ class Search extends Component {
         data: { results: this.state.results }
       }} />
     }
+
     return (
       <div>
         <Jumbotron>
           <h1 className="display-4"> Google Books Search</h1>
           <p className="lead">Search for and save books of interest.</p>
           <hr className="my-4" />
-          <p className="lead">
-            <Link className="btn btn-default btn-lg" to="/" role="button">New Search</Link>
-            <Link className="btn btn-default btn-lg" to="/saved" role="button">Saved Books</Link>
-          </p>
         </Jumbotron>
         <Container>
           <form>

@@ -1,16 +1,14 @@
 import React, { Component } from "react";
-import { Link, Redirect } from "react-router-dom";
-import Jumbotron from "../../components/Jumbotron";
-import { Container } from "../../components/Grid";
-import API from "../../utils/";
-import { Container } from "../../components/Grid";
+import { Link } from "react-router-dom";
+// import DeleteBtn from "../components/DeleteBtn";
+import Jumbotron from "../components/Jumbotron";
+import { Col, Row, Container } from "../components/Grid";
+import API from "../utils/API";
 
 
 class Saved extends Component {
   state = {
     books: [],
-    target: "",
-    noResults: false
   };
 
   componentDidMount() {
@@ -73,7 +71,7 @@ class Saved extends Component {
         </Jumbotron>
         <Container>
           <h2>Saved Books</h2>
-          <List>
+          {/* <List>
             {this.state.books.map(book => (
               <ListItem key={book._id}>
                 <div className="date-div">
@@ -105,7 +103,7 @@ class Saved extends Component {
                 </div>
               </ListItem>
             ))}
-          </List>
+          </List> */}
         </Container>
       </div>
     );

@@ -3,6 +3,7 @@
 <br>
 ## How to Use
 <br>
+>
 > ####Search for a book. 
 > -Input a title of a book, or a word in a title, in the search bar.
 > -Hit the submit button.

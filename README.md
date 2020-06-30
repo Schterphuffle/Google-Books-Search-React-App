@@ -3,15 +3,14 @@
 <br>
 ## How to Use
 <p>
->
-> ####Search for a book. 
+####Search for a book. 
 > -Input a title of a book, or a word in a title, in the search bar.
 > -Hit the submit button.
 > -Peruse the results.
 > -Click the saved button to add the book to your saved book list. 
 <br></p>
 <p>
-> ####Head over to the Saved page to see your selections. 
+####Head over to the Saved page to see your selections. 
 > -Click delete to remove a book from your saved list. 
 <br></p>
 

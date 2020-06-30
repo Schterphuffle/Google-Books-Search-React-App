@@ -22,7 +22,7 @@ export function TextArea(props) {
 
 export function FormBtn({type="default", className, children, onClick}) {
   return (
-    <button onClick={onClick} className="btn btn-success">
+    <button onClick={onClick} className="btn btn-info">
       {children}
     </button>
   );

@@ -15,6 +15,18 @@ class Search extends Component {
     link: ""
   };
 
+  componentDidMount () {
+    this.loadBooks();
+  };
+
+  loadBooks = () => {
+    API.getBooks()
+    .then(res =>
+      this.setState({books: res.data, title: "", authors: "", description: "", image: "", link: "" })
+      )
+      .catch(err => console.log(err));
+  };
+
   handleInputChange = event => {
     const { name, value } = event.target;
     this.setState({
@@ -38,6 +50,21 @@ class Search extends Component {
             results: res.data.items
           });
         })
+        .catch(err => console.log(err));
+    }
+  };
+
+  handleFormSubmit = event => {
+    event.preventDefault();
+    if (this.state.title && this.state.author) {
+      API.saveBook({
+        title: this.state.title,
+        authors: this.state.authors,
+        description: this.state.description,
+        image: this.state.image,
+        link: this.state.link
+      })
+        .then(res => this.loadBooks())
         .catch(err => console.log(err));
     }
   };

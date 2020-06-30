@@ -2,8 +2,9 @@
 ### Anne Jordan, Amanda Amos, Joewan Eiland, and Steffi Wellington
 <br>
 ## How to Use
-<p>
+<br>
 ####Search for a book. 
+<p>
 > -Input a title of a book, or a word in a title, in the search bar.
 > -Hit the submit button.
 > -Peruse the results.
